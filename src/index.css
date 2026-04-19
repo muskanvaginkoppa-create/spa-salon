@@ -55,7 +55,7 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -106,6 +106,6 @@ code,
 code {
   font-size: 15px;
   line-height: 135%;
-  padding: 4px 8px;
+  padding: 0;
   background: var(--code-bg);
 }

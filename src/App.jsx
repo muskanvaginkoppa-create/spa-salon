@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 // ─── GOOGLE FONTS ────────────────────────────────────────────────────────────
 const FontLoader = () => (
   <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+    @import url(https://png.pngtree.com/thumb_back/fh260/background/20241116/pngtree-luxurious-spa-salon-interior-with-lush-greenery-image_16526373.jpg);
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -132,7 +132,7 @@ const FontLoader = () => (
       background: linear-gradient(135deg, var(--gold-dark), var(--gold));
       color: white;
       border: none;
-      padding: 14px 36px;
+      padding: 25px 50px;
       font-family: 'Poppins', sans-serif;
       font-size: 0.85rem;
       font-weight: 500;
@@ -160,7 +160,7 @@ const FontLoader = () => (
       background: transparent;
       color: var(--gold-dark);
       border: 1px solid var(--gold);
-      padding: 12px 32px;
+      padding: 0%;
       font-family: 'Poppins', sans-serif;
       font-size: 0.8rem;
       font-weight: 500;
@@ -182,13 +182,13 @@ const FontLoader = () => (
       top: 0; left: 0; right: 0;
       z-index: 1000;
       transition: all 0.4s ease;
-      padding: 20px 0;
+      padding: 0;
     }
     .navbar.scrolled {
       background: rgba(250,247,242,0.95);
       backdrop-filter: blur(20px);
       box-shadow: 0 2px 40px rgba(44,38,32,0.08);
-      padding: 12px 0;
+      padding: 0;
     }
     .nav-link {
       color: var(--stone);
@@ -197,7 +197,7 @@ const FontLoader = () => (
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 4px 0;
+      padding: 0;
       position: relative;
       transition: color 0.3s;
     }
@@ -301,7 +301,7 @@ const FontLoader = () => (
     /* Form inputs */
     .form-input, .form-select, .form-textarea {
       width: 100%;
-      padding: 14px 16px;
+      padding: 0%;
       border: 1px solid var(--beige);
       background: white;
       font-family: 'Poppins', sans-serif;
@@ -329,7 +329,7 @@ const FontLoader = () => (
     .tab-btn {
       background: transparent;
       border: none;
-      padding: 10px 20px;
+      padding: 0%;
       font-family: 'Poppins', sans-serif;
       font-size: 0.8rem;
       font-weight: 500;
@@ -356,7 +356,7 @@ const FontLoader = () => (
     .gift-card-visual {
       background: linear-gradient(135deg, var(--charcoal) 0%, #3d3028 50%, var(--charcoal) 100%);
       border-radius: 16px;
-      padding: 36px;
+      padding: 0%;
       position: relative;
       overflow: hidden;
       color: white;
@@ -388,7 +388,7 @@ const FontLoader = () => (
       gap: 10px;
       cursor: pointer;
       transition: all 0.3s ease;
-      padding: 16px 24px;
+      padding: 0%;
     }
     .category-chip:hover { transform: translateY(-4px); }
     .category-icon {
@@ -457,8 +457,7 @@ const SERVICES = {
   Hair: [
     { id: "h1", name: "Luxe Blow-Dry & Style", desc: "Salon-perfect blowout tailored to your texture and desired finish.", price: "₹1,200", duration: "45 min", image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&q=80", addons: ["Deep conditioning", "Scalp massage", "Argan oil treatment"] },
     { id: "h2", name: "Precision Cut & Style", desc: "Expert cut with customized styling for your face shape and lifestyle.", price: "₹1,800", duration: "60 min", image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80", addons: ["Color consultation", "Glossing treatment"] },
-    { id: "h3", name: "Balayage Highlights", desc: "Sun-kissed, hand-painted highlights for natural-looking dimension.", price: "₹4,500", duration: "150 min", image: "https://images.unsplash.com/photo-1634438304207-f96af60fff97?w=500&q=80", addons: ["Toning service", "Bond repair treatment"] },
-    { id: "h4", name: "Keratin Smoothing", desc: "Eliminate frizz and restore silkiness with our premium keratin treatment.", price: "₹6,000", duration: "180 min", image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?w=500&q=80", addons: ["Post-treatment shampoo kit", "Follow-up blowout"] },
+    { id: "h3", name: "Keratin Smoothing", desc: "Eliminate frizz and restore silkiness with our premium keratin treatment.", price: "₹6,000", duration: "180 min", image: "https://images.unsplash.com/photo-1559599101-f09722fb4948?w=500&q=80", addons: ["Post-treatment shampoo kit", "Follow-up blowout"] },
   ],
   Skin: [
     { id: "s1", name: "Hydra-Glow Facial", desc: "Deeply hydrating facial with hyaluronic acid and botanical extracts.", price: "₹2,500", duration: "75 min", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80", addons: ["LED therapy", "Eye contour mask"] },
@@ -745,7 +744,7 @@ const HomePage = ({ navigate }) => {
       {/* HERO */}
       <section className="hero-section">
         <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1600&q=80" alt="Spa" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <img src="https://images.openai.com/static-rsc-4/a7ppFcbCBEkucoccDXVvmB3NWA7l2UrG2CKmdMRVOxe1IBzfkwz92PWUK5YQSwFemXqWJnRjHVLF9RjIsigQsn8UkErnTIoxLzexizNOp9R4gU4vfUDyc6o8G3tnK0_rRJjicPRxVhu9sSQdkEpIyShmXqPXG6Q-2D-yf1Z3XE0oROSDmCyFbkOrh1V12SLc?purpose=fullsize" alt="Spa" style={{ width: "100%", height: "100%",objectFit: "cover" }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(44,38,32,0.75) 0%, rgba(44,38,32,0.45) 60%, transparent 100%)" }} />
         </div>
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
@@ -812,7 +811,7 @@ const HomePage = ({ navigate }) => {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 60, alignItems: "center" }}>
             <div data-reveal>
               <div style={{ position: "relative" }}>
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="Spa interior" style={{ width: "100%", borderRadius: 4, height: 480, objectFit: "cover" }} />
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20241116/pngtree-luxurious-spa-salon-interior-with-lush-greenery-image_16526373.jpg" alt="Spa interior" style={{ width: "100%", borderRadius: 4, height: 480, objectFit: "cover" }} />
                 <div className="glass-card" style={{ position: "absolute", bottom: -24, right: -24, padding: "20px 28px", borderRadius: 4, textAlign: "center" }}>
                   <div className="gold-shimmer" style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.2rem", fontWeight: 600 }}>12+</div>
                   <div style={{ fontSize: "0.72rem", color: "var(--stone)", letterSpacing: "0.1em", textTransform: "uppercase" }}>Years of Excellence</div>
@@ -928,7 +927,7 @@ const ServicesPage = ({ navigate }) => {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", paddingTop: 120, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, opacity: 0.15 }}>
-          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1400&q=60" alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20241116/pngtree-luxurious-spa-salon-interior-with-lush-greenery-image_16526373.jpg" alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <div className="container" style={{ position: "relative", textAlign: "center" }}>
           <span className="section-label" style={{ color: "var(--gold)" }}>What We Offer</span>
@@ -956,7 +955,7 @@ const ServicesPage = ({ navigate }) => {
 
 // ─── SERVICE DETAIL ───────────────────────────────────────────────────────────
 const ServiceDetailPage = ({ service, onBack, navigate }) => (
-  <div style={{ paddingTop: 80 }}>
+  <div style={{ paddingTop: 0 }}>
     <div style={{ position: "relative", height: 400, overflow: "hidden" }}>
       <img src={service.image} alt={service.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 40%, rgba(44,38,32,0.85))" }} />
@@ -968,7 +967,7 @@ const ServiceDetailPage = ({ service, onBack, navigate }) => (
         </div>
       </div>
     </div>
-    <div className="container" style={{ padding: "60px 24px" }}>
+    <div className="w-ful" style={{ padding: "0"}}>
       <button onClick={onBack} style={{ background: "none", border: "none", color: "var(--gold)", cursor: "pointer", fontSize: "0.8rem", letterSpacing: "0.1em", marginBottom: 36, display: "flex", alignItems: "center", gap: 8 }}>← Back to Services</button>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 60 }}>
         <div>
@@ -1012,7 +1011,7 @@ const TeamPage = () => {
     <div>
       <section style={{ background: "var(--charcoal)", paddingTop: 120, paddingBottom: 60, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, opacity: 0.12 }}>
-          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1400&q=60" alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20241116/pngtree-luxurious-spa-salon-interior-with-lush-greenery-image_16526373.jpg" alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <div className="container" style={{ position: "relative", textAlign: "center" }}>
           <span className="section-label" style={{ color: "var(--gold)" }}>The Artisans</span>
@@ -1021,7 +1020,7 @@ const TeamPage = () => {
         </div>
       </section>
       <section className="section-pad">
-        <div className="container">
+        <div className="w-full min-h-screen">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 28 }}>
             {TEAM.map((m, i) => <TeamCard key={i} member={m} />)}
           </div>
@@ -1051,7 +1050,7 @@ const GalleryPage = () => {
         </div>
       </section>
       <section className="section-pad">
-        <div className="container">
+        <div className="w-full min-h-screen">
           <div data-reveal style={{ columns: "3 200px", gap: 14 }}>
             {ALL.map((img, i) => (
               <div key={i} className="gallery-item" style={{ marginBottom: 14, breakInside: "avoid" }}>
@@ -1087,7 +1086,7 @@ const GiftCardsPage = ({ navigate }) => {
       </section>
 
       <section className="section-pad">
-        <div className="container">
+        <div className="w-full min-h-screen">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 60, alignItems: "start" }}>
             {/* Configurator */}
             <div data-reveal>
@@ -1114,7 +1113,7 @@ const GiftCardsPage = ({ navigate }) => {
             {/* Preview */}
             <div data-reveal>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.5rem", marginBottom: 24, color: "var(--charcoal)" }}>Card Preview</h2>
-              <div className="gift-card-visual">
+              <div className="w-full">
                 <div style={{ position: "relative", zIndex: 1 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 40 }}>
                     <div>
@@ -1177,7 +1176,7 @@ const ContactPage = () => {
       </section>
 
       <section className="section-pad">
-        <div className="container">
+        <div className="w-full min-h-screen">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 60 }}>
             {/* Booking Form */}
             <div data-reveal>
